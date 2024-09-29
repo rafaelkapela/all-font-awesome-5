@@ -1,23 +1,23 @@
-# All Font Awesome 5
+# All Font Awesome 5 Icons Picker
 
-This project dynamically loads and displays **all Font Awesome 5 icons** in a modal, allowing users to easily select an icon for their project. It supports **Brand**, **Regular**, and **Solid** icon families with the appropriate `fab`, `far`, and `fas` prefixes.
+This project provides a **dynamic modal** that allows users to browse and select from **all Font Awesome 5 icons**, organized into **Brand**, **Regular**, and **Solid** icon families, with the corresponding `fab`, `far`, and `fas` prefixes. This solution simplifies icon selection for web projects and integrates seamlessly into HTML forms.
 
-## Features
+## Key Features
 
-- Automatically populates a modal with all available Font Awesome 5 icons.
-- Icons are stored in a JavaScript array for easy access and modification.
-- Includes hover and click effects for user-friendly interaction.
-- Allows users to select an icon, and it automatically inserts the chosen icon into an input field.
-- No external CSS required—everything is styled inline with JavaScript.
+- **Complete Icon Set**: Displays the full collection of Font Awesome 5 icons, categorized by icon family (`fab`, `far`, `fas`).
+- **Dynamic Icon Picker**: Automatically generates a **grid of icons** inside a modal using JavaScript, without needing external CSS.
+- **User-Friendly UI**: Hover and click effects for better user interaction. Icons change color on hover, making it easier to identify selected icons.
+- **No External CSS**: All styles are applied via JavaScript, so no need to manage additional CSS files.
+- **Efficient Icon Selection**: Clicking an icon automatically inserts its class name into an input field for use in your project.
 
 ## How It Works
 
-All icons are stored in a JavaScript array called `icons`. This array contains the class names of **all Font Awesome 5 icons**, and it is used to dynamically create the icon grid in the modal. When the modal is shown, it loops through the array, creates each icon element with the appropriate classes (`fab`, `fas`, `far`), and appends them to the modal.
+All icons are stored in JavaScript arrays called `brandIcons`, `regularIcons`, and `solidIcons`. Each array contains the class names for **all Font Awesome 5 icons** in their respective families. The script dynamically loads and displays these icons in a modal window when triggered, allowing users to click and select an icon. The selected icon class is inserted into a form input field for easy integration.
 
-Here’s an example of the array setup in the script:
+### Example of the Icons Array:
 
 ```javascript
-const icons = [
+const solidIcons = [
   'fa-address-book', 
   'fa-500px', 
   'fa-accessible-icon', 
