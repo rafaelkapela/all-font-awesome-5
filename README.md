@@ -15,13 +15,17 @@ This project provides a **dynamic modal** that allows users to browse and select
 
 The icons are organized into JavaScript arrays named `brandIcons`, `regularIcons`, and `solidIcons`. Each array contains the class names for **all Font Awesome 5 icons** in their respective families. When the modal is triggered, the script dynamically generates a grid of icons from these arrays. Users can click on an icon, and the corresponding class name is inserted into a form input field.
 
-### Example of the Icons Array:
+### Example of the Icons Arrays:
+
+- **Brand Icons Array**:
 
 ```javascript
-const solidIcons = [
-  'fa-address-book', 
+const brandIcons = [
   'fa-500px', 
   'fa-accessible-icon', 
-  'fa-adjust', 
-  // more icon class names
+  'fa-accusoft', 
+  'fa-amazon', 
+  'fa-google', 
+  'fa-twitter', 
+  // more brand icon class names
 ];
